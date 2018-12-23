@@ -1,0 +1,39 @@
+{
+  "name": "dev-social-network",
+  "version": "1.0.0",
+  "description": "A Dev Social network project",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gercordero/dev-social-network"
+  },
+  "keywords": [
+    "dev",
+    "social",
+    "network"
+  ],
+  "author": "German Cordero",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react-hot-loader": "^4.6.3",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
