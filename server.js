@@ -1,5 +1,10 @@
 const express = require("express");
 const moongose = require("mongoose");
+const bodyParser = require("body-parser");
+const passport = require("passport");
+
+//Express instance
+const app = express();
 
 //Routes
 const users = require("./routes/api/users");
@@ -18,12 +23,15 @@ moongose
   .then(() => console.log("MongoDB Conected"))
   .catch(err => console.log(err));
 
-//Express instance
-const app = express();
+//Body parser middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-  res.send("Hello");
-});
+//Passport middleware
+app.use(passport.initialize());
+
+//Pasport Config
+require("./config/passport")(passport);
 
 //Use routes
 app.use("/api/users", users);
