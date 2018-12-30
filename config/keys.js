@@ -1,5 +1,5 @@
 module.exports = {
   mongoURI:
-    "mongodb://gercordero:Gercordero123@ds245240.mlab.com:45240/dev-social-network",
-  secretOrKey: "secret"
+    "mongodb+srv://gercordero:RBfgtzWmEveUJEce@dev-social-network-djkn4.mongodb.net/test?retryWrites=true",
+  secretOrKey: "OCZSgsngxi1QFZodg597KuiKzcE9cpk6wSBo9siPqR7tEiZzQnPBuFCMmSSiacz"
 };
