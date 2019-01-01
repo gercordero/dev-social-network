@@ -1,5 +1,5 @@
-module.exports = {
-  mongoURI:
-    "mongodb+srv://gercordero:RBfgtzWmEveUJEce@dev-social-network-djkn4.mongodb.net/test?retryWrites=true",
-  secretOrKey: "OCZSgsngxi1QFZodg597KuiKzcE9cpk6wSBo9siPqR7tEiZzQnPBuFCMmSSiacz"
-};
+if (process.env.NODE_ENV === "production") {
+  module.exports = require("./keys_prod");
+} else {
+  module.exports = require("./keys_dev");
+}
