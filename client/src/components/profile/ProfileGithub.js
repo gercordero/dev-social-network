@@ -39,7 +39,7 @@ class ProfileGithub extends Component {
                   <a
                     href="#"
                     className="text-info"
-                    onClick={window.open(repo.html_url, "_blank")}
+                    onClick={() => window.open(repo.html_url, "_blank")}
                   >
                     {repo.name}
                   </a>
